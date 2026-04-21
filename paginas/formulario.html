@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Invencível - Recrutamento</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="topo">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria e Tabelas</a></li>
+                <li><a href="formulario.html">Formulário e Mídia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Área de Mídia e Recrutamento</h1>
+
+        <section style="text-align: center;">
+            <h3>Assista ao Trailer</h3>
+            <video width="500" controls>
+                <source src="../media/video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+
+            <h3>Ouça a Mensagem do Herói</h3>
+            <audio controls>
+                <source src="../media/musica.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </section>
+
+        <hr>
+
+        <h2>Formulário de Alistamento</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Dados do Aspirante a Herói</legend>
+
+                <label for="nome">Nome Real:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Mark Grayson"><br><br>
+
+                <label for="hero">Nome de Herói:</label><br>
+                <input type="text" id="hero" name="hero"><br><br>
+
+                <p>Qual a origem do seu poder?</p>
+                <input type="radio" id="alien" name="origem" value="alien">
+                <label for="alien">Viltrumita/Alien</label><br>
+                <input type="radio" id="tecnologia" name="origem" value="tecnologia">
+                <label for="tecnologia">Tecnológico/Robot</label><br>
+                <input type="radio" id="mutante" name="origem" value="mutante">
+                <label for="mutante">Experimento Científico</label><br><br>
+
+                <p>Selecione suas habilidades (Pode marcar várias):</p>
+                <input type="checkbox" id="voo" name="habil" value="voo">
+                <label for="voo">Voo</label><br>
+                <input type="checkbox" id="forca" name="habil" value="forca">
+                <label for="forca">Super Força</label><br>
+                <input type="checkbox" id="cura" name="habil" value="cura">
+                <label for="cura">Cura Acelerada</label><br>
+                <input type="checkbox" id="inv" name="habil" value="inv">
+                <label for="inv">Invisibilidade</label><br><br>
+
+                <label for="perigo">Nível de perigo que você representa (1 a 10):</label>
+                <input type="number" id="perigo" name="perigo" min="1" max="10"><br><br>
+
+                <label for="data">Data de disponibilidade para treino:</label>
+                <input type="date" id="data" name="data"><br><br>
+
+                <label for="mentor">Escolha seu Mentor:</label>
+                <select id="mentor" name="mentor">
+                    <option value="omni">Omni-Man</option>
+                    <option value="eve">Atom Eve</option>
+                    <option value="immortal">Immortal</option>
+                </select><br><br>
+
+                <label for="msg">Por que quer ser um Guardião?</label><br>
+                <textarea id="msg" name="msg" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Enviar Alistamento</button>
+                <button type="reset">Limpar Tudo</button>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px;">
+            <a href="#topo">Voltar ao topo da página</a>
+        </p>
+    </footer>
+
+</body>
+</html>
